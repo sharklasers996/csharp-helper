@@ -4,7 +4,7 @@
 	"description": "C# Helper",
 	"publisher": "roadsidejesus",
 	"repository": {
-		"https://github.com/sharklasers996/csharp-helper"
+		"url": "https://github.com/sharklasers996/csharp-helper"
 	},
 	"version": "0.0.2",
 	"engines": {
