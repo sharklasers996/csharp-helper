@@ -11,7 +11,8 @@
 			"request": "launch",
 			"runtimeExecutable": "${execPath}",
 			"args": [
-				"c:\\Users\\PonasPx\\Code\\csharp\\WeatherCrawler\\",
+				"c:\\Users\\PonasPx\\Code\\csharp\\WebNotifications\\",
+				"--disable-extensions",
 				"--extensionDevelopmentPath=${workspaceFolder}"
 			],
 			"outFiles": [
