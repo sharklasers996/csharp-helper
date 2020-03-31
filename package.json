@@ -2,6 +2,7 @@
 	"name": "csharp-helper",
 	"displayName": "csharp-helper",
 	"description": "C# Helper",
+	"publisher": "roadsidejesus",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.43.0"
