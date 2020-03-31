@@ -66,7 +66,6 @@ export function activate(context: vscode.ExtensionContext) {
 					if ((match = classRegex.exec(documentLine!.text))) {
 						matchedClassName = match[3];
 						classStartLine = i;
-						vscode.window.showInformationMessage(match[3]);
 						break;
 					}
 				}
