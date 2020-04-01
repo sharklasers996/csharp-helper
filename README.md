@@ -32,3 +32,7 @@ Provides prompt to select path, creates files from template.
 `csharp-helper.create-test`
 
 Provides prompt to select path, creates XUnit test class from template.
+
+`csharp-helper.embed-code`
+
+Provides prompt to select template, surrounds selected text with template.
