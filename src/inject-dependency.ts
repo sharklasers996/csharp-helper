@@ -204,6 +204,29 @@ export class DependencyInjector {
                             let variableText = `\t\t\t_${variableName} = ${variableName};\n`;
                             editBuilder.insert(new vscode.Position(constructorStartLine + 3, 0), variableText);
                         });
+
+                        // format constructor variables on separate lines
+                        let unformattedConstructor = document?.lineAt(constructorStartLine + 1);
+                        let variableListRegex = new RegExp(/public\s\w+\((.+)\)/g);
+                        let variableListMatch = variableListRegex.exec(unformattedConstructor!.text);
+                        let variableList = variableListMatch![1].split(',');
+
+                        await vscode.window.activeTextEditor?.edit((editBuilder: vscode.TextEditorEdit) => {
+                            editBuilder.delete(new vscode.Range(constructorStartLine + 1, 0, constructorStartLine + 1, unformattedConstructor!.text.length));
+
+                            let constructorText = `\t\tpublic ${matchedClassName}(\n`;
+                            for (let i = 0; i < variableList.length; i++) {
+                                constructorText += `\t\t\t${variableList[i].trim()}`;
+                                if (i < variableList.length - 1) {
+                                    constructorText += ',\n';
+                                }
+                                else {
+                                    constructorText += ')';
+                                }
+                            }
+
+                            editBuilder.insert(new vscode.Position(constructorStartLine + 1, 0), constructorText);
+                        });
                     }
                     else {
                         let constructorEndLineText = document?.lineAt(constructorEndLine + 1).text!;
