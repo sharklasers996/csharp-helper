@@ -1,0 +1,17 @@
+using System;
+using Xunit;
+using FluentAssertions;
+
+namespace $namespace
+{
+    public class $name : IDisposable
+    {
+        public $name()
+        {
+        }
+
+        public void Dispose()
+        {
+        }
+    }
+}

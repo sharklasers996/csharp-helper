@@ -14,7 +14,11 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:csharp-helper.inject-dependency"
+		"onCommand:csharp-helper.inject-dependency",
+		"onCommand:csharp-helper.create-class",
+		"onCommand:csharp-helper.create-interface",
+		"onCommand:csharp-helper.create-enum",
+		"onCommand:csharp-helper.create-test"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -22,6 +26,22 @@
 			{
 				"command": "csharp-helper.inject-dependency",
 				"title": "Inject Dependency (C#)"
+			},
+			{
+				"command": "csharp-helper.create-class",
+				"title": "Create Class (C#)"
+			},
+			{
+				"command": "csharp-helper.create-interface",
+				"title": "Create Interface (C#)"
+			},
+			{
+				"command": "csharp-helper.create-enum",
+				"title": "Create Enum (C#)"
+			},
+			{
+				"command": "csharp-helper.create-test",
+				"title": "Create Test Class (C#)"
 			}
 		]
 	},
