@@ -1,0 +1,7 @@
+$indent try
+$indent {
+    $code
+$indent }
+$indent catch(Exception ex)
+$indent {
+$indent }

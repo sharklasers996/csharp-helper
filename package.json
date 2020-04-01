@@ -19,7 +19,8 @@
 		"onCommand:csharp-helper.create-class",
 		"onCommand:csharp-helper.create-interface",
 		"onCommand:csharp-helper.create-enum",
-		"onCommand:csharp-helper.create-test"
+		"onCommand:csharp-helper.create-test",
+		"onCommand:csharp-helper.embed-code"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -30,19 +31,23 @@
 			},
 			{
 				"command": "csharp-helper.create-class",
-				"title": "Create Class (C#)"
+				"title": "Create New Class (C#)"
 			},
 			{
 				"command": "csharp-helper.create-interface",
-				"title": "Create Interface (C#)"
+				"title": "Create New Interface (C#)"
 			},
 			{
 				"command": "csharp-helper.create-enum",
-				"title": "Create Enum (C#)"
+				"title": "Create New Enum (C#)"
 			},
 			{
 				"command": "csharp-helper.create-test",
-				"title": "Create Test Class (C#)"
+				"title": "Create New Test Class (C#)"
+			},
+			{
+				"command": "csharp-helper.embed-code",
+				"title": "Embed selected text into a code block. (C#)"
 			}
 		]
 	},

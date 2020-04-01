@@ -12,7 +12,7 @@
 			"runtimeExecutable": "${execPath}",
 			"args": [
 				"c:\\Users\\PonasPx\\Code\\csharp\\WebNotifications\\",
-				"--disable-extensions",
+				// "--disable-extensions",
 				"--extensionDevelopmentPath=${workspaceFolder}"
 			],
 			"outFiles": [

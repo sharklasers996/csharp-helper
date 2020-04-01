@@ -1,6 +1,7 @@
 import * as vscode from 'vscode';
 import { DependencyInjector } from './inject-dependency';
 import { FileCreator } from './file-creator';
+import { CodeEmbed } from './code-embed';
 
 export function activate(context: vscode.ExtensionContext) {
 	const injector = new DependencyInjector()
@@ -11,34 +12,9 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand('csharp-helper.create-interface', fileCreator.createInterface));
 	context.subscriptions.push(vscode.commands.registerCommand('csharp-helper.create-enum', fileCreator.createEnum));
 	context.subscriptions.push(vscode.commands.registerCommand('csharp-helper.create-test', fileCreator.createTest));
-}
 
-function toCase(toType: 'pascal' | 'camel' | '_camel', str: string): string {
-	if (!str) {
-		return "";
-	}
-
-	if (str === "_" && toType === "_camel") {
-		return "_";
-	} else if (str === "_" && toType !== "_camel") {
-		return "";
-	}
-
-	if (str[0] === "_") {
-		str = str.substr(1);
-	}
-
-	if (toType === "camel") {
-		str = str[0].toLowerCase() + str.substr(1);
-	}
-	if (toType === "_camel") {
-		str = "_" + str[0].toLowerCase() + str.substr(1);
-	}
-	if (toType === "pascal") {
-		str = str[0].toUpperCase() + str.substr(1);
-	}
-
-	return str;
+	const codeEmbed = new CodeEmbed();
+	context.subscriptions.push(vscode.commands.registerCommand('csharp-helper.embed-code', codeEmbed.embedCode));
 }
 
 export function deactivate() { }
