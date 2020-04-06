@@ -2,11 +2,12 @@
 
 Helper functions to speed up C# development.
 
-## Functions
+**Functions are intended to be called using keyboard shortcuts (or command search dropdown), hence no mouse menus.**
 
+# Inject Dependency (C#) 
 `csharp-helper.inject-dependency`
 
-Provides search input for finding *.cs files, adds selected file name to constructor, creates private readonly field.
+Provides search input for finding *.cs files, adds selected file name to constructor, creates private readonly field, formats constructor on separate lines if it has more than one parameter.
 
 Constructor will be created if it doesn't exist.
 
@@ -20,19 +21,35 @@ public Constructor(IDependency dependency)
 }
 ...
 ```
+# Create C# files
+
+Provides prompt to select path, creates files from template.
+Files are created with correct namespace.
+
+- Create New Class (C#) 
 
 `csharp-helper.create-class`
 
-`csharp-helper.create-enum`
+- Create New Interface (C#)
 
 `csharp-helper.create-interface`
 
-Provides prompt to select path, creates files from template.
+- Create New Enum (C#)
+
+`csharp-helper.create-enum`
+
+- Create New Test Class (C#)
 
 `csharp-helper.create-test`
 
-Provides prompt to select path, creates XUnit test class from template.
+# Embed selected text into a code block. (C#)
 
 `csharp-helper.embed-code`
 
 Provides prompt to select template, surrounds selected text with template.
+
+Available templates:
+
+`try { ... } catch(Exception ex) { ... }`
+
+`if (...) { ... }`
