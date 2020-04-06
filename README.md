@@ -53,3 +53,14 @@ Available templates:
 `try { ... } catch(Exception ex) { ... }`
 
 `if (...) { ... }`
+
+# Fix namespace (C#)
+
+`csharp-helper.fix-namespace`
+
+Corrects namespace in current file based on path to project.
+
+## TODO functions
+- Import all missing usings in file.
+
+Any suggestions are welcome, please use github issues for that.

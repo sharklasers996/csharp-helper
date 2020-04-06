@@ -20,7 +20,8 @@
 		"onCommand:csharp-helper.create-interface",
 		"onCommand:csharp-helper.create-enum",
 		"onCommand:csharp-helper.create-test",
-		"onCommand:csharp-helper.embed-code"
+		"onCommand:csharp-helper.embed-code",
+		"onCommand:csharp-helper.fix-namespace"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -48,6 +49,10 @@
 			{
 				"command": "csharp-helper.embed-code",
 				"title": "Embed selected text into a code block. (C#)"
+			},
+			{
+				"command": "csharp-helper.fix-namespace",
+				"title": "Fix namespace (C#)"
 			}
 		]
 	},

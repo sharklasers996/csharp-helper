@@ -2,6 +2,7 @@ import * as vscode from 'vscode';
 import { DependencyInjector } from './inject-dependency';
 import { FileCreator } from './file-creator';
 import { CodeEmbed } from './code-embed';
+import { NamespaceFixer } from './namespace-fixer';
 
 export function activate(context: vscode.ExtensionContext) {
 	const injector = new DependencyInjector()
@@ -15,6 +16,9 @@ export function activate(context: vscode.ExtensionContext) {
 
 	const codeEmbed = new CodeEmbed();
 	context.subscriptions.push(vscode.commands.registerCommand('csharp-helper.embed-code', codeEmbed.embedCode));
+
+	const namespaceFixer = new NamespaceFixer();
+	context.subscriptions.push(vscode.commands.registerCommand('csharp-helper.fix-namespace', namespaceFixer.fix));
 }
 
 export function deactivate() { }
