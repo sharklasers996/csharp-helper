@@ -42,7 +42,7 @@ Files are created with correct namespace.
 
 `csharp-helper.create-test`
 
-# Embed selected text into a code block. (C#)
+# Embed selected text into a code block (C#)
 
 `csharp-helper.embed-code`
 

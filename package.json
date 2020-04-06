@@ -48,7 +48,7 @@
 			},
 			{
 				"command": "csharp-helper.embed-code",
-				"title": "Embed selected text into a code block. (C#)"
+				"title": "Embed selected text into a code block (C#)"
 			},
 			{
 				"command": "csharp-helper.fix-namespace",
