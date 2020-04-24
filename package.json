@@ -21,7 +21,8 @@
 		"onCommand:csharp-helper.create-enum",
 		"onCommand:csharp-helper.create-test",
 		"onCommand:csharp-helper.embed-code",
-		"onCommand:csharp-helper.fix-namespace"
+		"onCommand:csharp-helper.fix-namespace",
+		"onCommand:csharp-helper.toggle-method-sync"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -48,11 +49,15 @@
 			},
 			{
 				"command": "csharp-helper.embed-code",
-				"title": "Embed selected text into a code block (C#)"
+				"title": "Embed Selection Into a Code Block (C#)"
 			},
 			{
 				"command": "csharp-helper.fix-namespace",
-				"title": "Fix namespace (C#)"
+				"title": "Fix Namespace (C#)"
+			},
+			{
+				"command": "csharp-helper.toggle-method-sync",
+				"title": "Toggle Method Sync (C#)"
 			}
 		]
 	},

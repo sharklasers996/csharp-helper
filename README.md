@@ -50,9 +50,11 @@ Provides prompt to select template, surrounds selected text with template.
 
 Available templates:
 
-`try { ... } catch(Exception ex) { ... }`
+```
+try { ... } catch(Exception ex) { ... }
 
-`if (...) { ... }`
+if (...) { ... }
+```
 
 # Fix namespace (C#)
 
@@ -60,7 +62,26 @@ Available templates:
 
 Corrects namespace in current file based on path to project.
 
+# Toggle Method Sync (C#)
+
+`csharp-helper.toggle-method-sync`
+
+Changes method signature to async and vice versa
+
+```
+void -> async Task
+
+T -> async Task<T>
+```
+
+```
+async Task -> void
+
+async Task<T> -> T
+```
+
 ## TODO functions
 - Import all missing usings in file.
+- Rename file to match class name
 
 Any suggestions are welcome, please use github issues for that.
