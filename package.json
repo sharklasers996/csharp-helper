@@ -22,7 +22,8 @@
 		"onCommand:csharp-helper.create-test",
 		"onCommand:csharp-helper.embed-code",
 		"onCommand:csharp-helper.fix-namespace",
-		"onCommand:csharp-helper.toggle-method-sync"
+		"onCommand:csharp-helper.toggle-method-sync",
+		"onCommand:csharp-helper.fix-filename"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -58,6 +59,10 @@
 			{
 				"command": "csharp-helper.toggle-method-sync",
 				"title": "Toggle Method Sync (C#)"
+			},
+			{
+				"command": "csharp-helper.fix-filename",
+				"title": "Fix Filename (C#)"
 			}
 		]
 	},
