@@ -1,8 +1,8 @@
-# C# Helper VSCode Extension
+# C# Helper
 
-Helper functions to speed up C# development.
+Functions are intended to be called using keyboard shortcuts (or command search dropdown), hence no mouse menus.
 
-**Functions are intended to be called using keyboard shortcuts (or command search dropdown), hence no mouse menus.**
+There are no default keyboard shortcuts, you can set them yourself searching for `csharp-helper` in keyboard shortcuts menu.
 
 # Inject Dependency (C#)
 

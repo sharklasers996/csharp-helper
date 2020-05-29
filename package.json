@@ -1,7 +1,7 @@
 {
 	"name": "csharp-helper",
 	"displayName": "C# Helper",
-	"description": "C# Helper",
+	"description": "Helper functions to speed up C# development.",
 	"publisher": "roadsidejesus",
 	"repository": {
 		"url": "https://github.com/sharklasers996/csharp-helper"
@@ -12,7 +12,19 @@
 		"vscode": "^1.43.0"
 	},
 	"categories": [
-		"Other"
+		"Programming Languages",
+		"Other",
+		"Snippets"
+	],
+	"keywords": [
+		"C#",
+		"csharp",
+		".NET",
+		".NET Core",
+		"dotnet",
+		"aspnet",
+		"refactor",
+		"namespace"
 	],
 	"activationEvents": [
 		"onCommand:csharp-helper.inject-dependency",
