@@ -11,8 +11,8 @@
 			"request": "launch",
 			"runtimeExecutable": "${execPath}",
 			"args": [
-				"d:\\Code\\csharp\\WebNotifications\\",
-				// "--disable-extensions",
+				"d:\\CsharpApp\\",
+				"--disable-extensions",
 				"--extensionDevelopmentPath=${workspaceFolder}"
 			],
 			"outFiles": [
