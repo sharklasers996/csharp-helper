@@ -4,29 +4,22 @@ Helper functions to speed up C# development.
 
 **Functions are intended to be called using keyboard shortcuts (or command search dropdown), hence no mouse menus.**
 
-# Inject Dependency (C#) 
+# Inject Dependency (C#)
+
 `csharp-helper.inject-dependency`
 
-Provides search input for finding *.cs files, adds selected file name to constructor, creates private readonly field, formats constructor on separate lines if it has more than one parameter.
+Provides search input for finding \*.cs files, adds selected file name to constructor, creates private readonly field, formats constructor on separate lines if it has more than one parameter.
 
 Constructor will be created if it doesn't exist.
 
-```csharp
-...
-private readonly IDependency _dependency;
+![alt text](https://raw.githubusercontent.com/sharklasers996/csharp-helper/master/assets/inject-dependency.gif)
 
-public Constructor(IDependency dependency)
-{
-    _dependency = dependency;
-}
-...
-```
 # Create C# files
 
 Provides prompt to select path, creates files from template.
 Files are created with correct namespace.
 
-- Create New Class (C#) 
+- Create New Class (C#)
 
 `csharp-helper.create-class`
 
@@ -42,6 +35,8 @@ Files are created with correct namespace.
 
 `csharp-helper.create-test`
 
+![alt text](https://raw.githubusercontent.com/sharklasers996/csharp-helper/master/assets/new-class.gif)
+
 # Embed selected text into a code block (C#)
 
 `csharp-helper.embed-code`
@@ -56,16 +51,23 @@ try { ... } catch(Exception ex) { ... }
 if (...) { ... }
 ```
 
+![alt text](https://raw.githubusercontent.com/sharklasers996/csharp-helper/master/assets/embed-code.gif)
+
 # Fix namespace (C#)
 
 `csharp-helper.fix-namespace`
 
 Corrects namespace in current file based on path to project.
 
+![alt text](https://raw.githubusercontent.com/sharklasers996/csharp-helper/master/assets/fix-namespace.gif)
+
 # Fix filename (C#)
 
 `csharp-helper.fix-filename`
+
 Renames file to match class name.
+
+![alt text](https://raw.githubusercontent.com/sharklasers996/csharp-helper/master/assets/fix-filename.gif)
 
 # Toggle Method Sync (C#)
 
@@ -73,19 +75,4 @@ Renames file to match class name.
 
 Changes method signature to async and vice versa
 
-```
-void -> async Task
-
-T -> async Task<T>
-```
-
-```
-async Task -> void
-
-async Task<T> -> T
-```
-
-## TODO functions
-- Import all missing usings in file.
-
-Any suggestions are welcome, please use github issues for that.
+![alt text](https://raw.githubusercontent.com/sharklasers996/csharp-helper/master/assets/toggle-method-sync.gif)
