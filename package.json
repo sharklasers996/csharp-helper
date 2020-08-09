@@ -6,7 +6,7 @@
 	"repository": {
 		"url": "https://github.com/sharklasers996/csharp-helper"
 	},
-	"version": "0.0.13",
+	"version": "0.0.14",
 	"icon": "icon.png",
 	"engines": {
 		"vscode": "^1.43.0"
